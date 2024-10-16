@@ -14,6 +14,7 @@ Here’s a comprehensive `README.md` file that includes the specified content al
 
 This is the implementation for **SKT5SciSumm - Revisiting Extractive-Generative Approach for Multi-Document Scientific Summarization** (Accepted at PACLIC 2024). (https://arxiv.org/abs/2402.17311) .
 
+![Alt text](architecture_specter_kmean.png)
 
 ## Requirements
 

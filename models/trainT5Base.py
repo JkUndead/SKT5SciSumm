@@ -68,7 +68,7 @@ class T5Trainer:
 
         # Seq2Seq training arguments
         training_args = Seq2SeqTrainingArguments(
-            output_dir="t5outputLarge",
+            output_dir="t5outputBase",
             evaluation_strategy="steps",
             learning_rate=3e-5,
             per_device_train_batch_size=8,

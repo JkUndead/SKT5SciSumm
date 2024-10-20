@@ -22,7 +22,7 @@ class T5Trainer:
             raise ValueError("Hugging Face access token not found. Set it as an environment variable.")
 
         # Load T5 model and tokenizer
-        self.checkpoint = "t5-large"
+        self.checkpoint = "t5-small"
         self.device = torch.device("cuda")
 
         self.tokenizer = AutoTokenizer.from_pretrained(self.checkpoint, model_max_length=2048)
@@ -68,7 +68,7 @@ class T5Trainer:
 
         # Seq2Seq training arguments
         training_args = Seq2SeqTrainingArguments(
-            output_dir="t5outputLarge",
+            output_dir="t5outputsmall",
             evaluation_strategy="steps",
             learning_rate=3e-5,
             per_device_train_batch_size=32,
